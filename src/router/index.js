@@ -16,7 +16,22 @@ const routes = [
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/About.vue')
+    component: () => import('../views/About.vue')
+  },
+  {
+    path: '/plotly_playroom',
+    name: 'Plotly Playroom',
+    component: () => import('../views/PlotlyPlayroom.vue')
+  },
+  {
+    path: '/vuetify_playroom',
+    name: 'Vuetify Playroom',
+    component: () => import('../views/VuetifyPlayroom.vue')
+  },
+  {
+    path: '/openlayers_playroom',
+    name: 'OpenLayers 6 Playroom',
+    component: () => import('../views/OpenLayersPlayroom.vue')
   }
 ]
 

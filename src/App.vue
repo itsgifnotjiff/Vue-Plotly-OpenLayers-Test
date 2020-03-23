@@ -1,32 +1,61 @@
 <template>
-  <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
-    <router-view/>
-  </div>
+  <v-app>
+    <v-app-bar
+      app
+      color="green"
+      dark
+    >
+      <div class="d-flex align-center">
+        <v-img
+          alt="Vuetify Logo"
+          class="shrink mr-2"
+          contain
+          src="./assets/ECCCLogo.png"
+          transition="scale-transition"
+          width="400"
+        />
+      </div>
+
+      <v-spacer></v-spacer>
+        <v-btn outlined to="/">
+            <v-icon>home</v-icon>
+        </v-btn>
+        <v-btn outlined to="/about">
+            <v-icon>help_outline</v-icon>
+        </v-btn>
+        <v-btn outlined to="/vuetify_playroom">
+          Vuetify <v-icon>style</v-icon>
+        </v-btn>
+        <v-btn outlined to="/plotly_playroom">
+          Plotly <v-icon>scatter_plot</v-icon>
+        </v-btn>
+        <v-btn outlined to="/openlayers_playroom">
+          OpenLayers 6 <v-icon>map</v-icon>
+        </v-btn>
+    </v-app-bar>
+
+    <v-content>
+      <router-view/>    
+    </v-content>
+
+    
+  </v-app>
 </template>
 
-<style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
+<script>
+// import HelloWorld from './components/HelloWorld';
 
-#nav {
-  padding: 30px;
+export default {
+  name: 'App',
 
-  a {
-    font-weight: bold;
-    color: #2c3e50;
+  // components: {
+  //   HelloWorld
+  // },
 
-    &.router-link-exact-active {
-      color: #42b983;
-    }
-  }
-}
-</style>
+  data: () => ({
+    //
+  }),
+};
+</script>
+
+

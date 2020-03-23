@@ -1,5 +1,8 @@
 <template>
   <v-container>
+  <h1>Vuetify Components</h1>
+  <hr>
+  <h3>Select</h3>
   <v-select
         v-model="mode"
         :items="modelNames"
@@ -9,7 +12,9 @@
         class="mt-3"
         label="Model Names"
       ></v-select>
-  <h3>Calendar from Vuetify</h3>
+  <br><br>
+  <h3>Calendar</h3>
+  <hr>
   <v-row>
     <v-col
       sm="12"
