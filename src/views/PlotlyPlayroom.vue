@@ -2,10 +2,6 @@
   <div>
     <h1>Plotly Playroom</h1>
     <v-container>
-      <Plotly :data="data1" :layout="layout1" :display-mode-bar="true"></Plotly>
-    </v-container>
-
-    <v-container>
       <Plotly :data="data" :layout="layout" :config="config" :display-mode-bar="true"></Plotly>
     </v-container>
   </div>

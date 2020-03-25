@@ -168,8 +168,8 @@ const config =
 	{
 		format: 'png', // one of png, svg, jpeg, webp
 		filename: 'plot',
-		// height: document.getElementById('tester').offsetHeight,
-		// width: document.getElementById('tester').offsetWidth,
+		height: 800,
+		width: 1800,
 		scale: 1 // Multiply title/legend/axis/canvas sizes by this factor
 	}
 };
