@@ -307,6 +307,24 @@
       </v-sheet>
     </v-col>
   </v-row>
+  <hr>
+  <h3>Time Picker</h3>
+  <br><br>
+  <v-row justify="space-around" align="center">
+    <v-col style="width: 290px; flex: 0 1 auto;">
+      <h2>Start :</h2>
+      <v-time-picker></v-time-picker>
+    </v-col>
+    <v-col style="width: 290px; flex: 0 1 auto;">
+      <h2>End :</h2>
+      <v-time-picker></v-time-picker>
+    </v-col>
+  </v-row>
+  <hr>
+  <h3>Date picker :</h3>
+  <v-row justify="center">
+    <v-date-picker v-model="picker"></v-date-picker>
+  </v-row>
   </v-container>
 </template>
 
@@ -428,6 +446,8 @@
       shortIntervals: true,
       shortMonths: false,
       shortWeekdays: false,
+      picker: new Date().toISOString().substr(0, 10),
+
     }),
     computed: {
       intervalStyle () {
