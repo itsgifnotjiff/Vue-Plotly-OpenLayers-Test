@@ -4,7 +4,7 @@
       :load-tiles-while-animating="true" 
       load-tiles-while-interacting="true"
       data-projection="EPSG:4326" 
-      style="height: 500px">
+      style="height: 800px">
 
       <vl-view 
         :zoom.sync="zoom" 
@@ -28,14 +28,14 @@
         <vl-source-osm></vl-source-osm>
       </vl-layer-tile>
 
-      <vl-layer-tile id="geomet">
+      <!-- <vl-layer-tile id="geomet">
         <vl-source-image-wms
           url='https://geo.weather.gc.ca/geomet'
           layer-name='RADAR_1KM_RSNO'
           server-type= 'mapserver'
           >
         </vl-source-image-wms>
-      </vl-layer-tile>
+      </vl-layer-tile> -->
     </vl-map>
   </div>
 </template>
