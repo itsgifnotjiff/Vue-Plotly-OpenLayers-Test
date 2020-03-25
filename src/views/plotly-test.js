@@ -177,10 +177,10 @@ const config =
 let layout = 
 {
 	autosize: true,
-	title:'Super Cool Title',
+	title:'Example Data pulled from VAQUUM',
 	xaxis: { title: 'Date' , tickformat: '%B-%Y' , tickmode: "linear" , tick0: "2017-01" , tickangle: "45" , dtick: 30 * 24 * 60 * 60 * 1000 },
-	yaxis: { title: 'yaxis title' },
-	margin: { l: 60 , r: 300 , b: 120 , t: 30 , pad: 5 },
+	yaxis: { title: 'Y-Axis Title' },
+	margin: { l: 60 , r: 50 , b: 120 , t: 30 , pad: 2 },
 	template: "plotly_dark"
 }
 
