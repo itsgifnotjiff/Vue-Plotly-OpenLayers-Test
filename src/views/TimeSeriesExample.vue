@@ -1,7 +1,7 @@
 <template>
   <div class="time-series-example">
     <v-container>
-      <p class="text-center display-2 font-weight-bold">Time Series Example Page</p>
+      <p class="text-center headline font-weight-bold">Time Series Example Page</p>
       <v-select
         v-model="selectedModels"
         :items="modelNames"
@@ -34,6 +34,7 @@
                 label="Pick Start Time"
                 prepend-icon="access_time"
                 readonly
+                color="light-green accent-4"
                 v-on="on"
               ></v-text-field>
             </template>
@@ -65,6 +66,7 @@
                 label="Pick End Time"
                 prepend-icon="access_time"
                 readonly
+                color="light-green accent-4"
                 v-on="on"
               ></v-text-field>
             </template>
@@ -98,6 +100,7 @@
                 label="Pick Start Date"
                 prepend-icon="today"
                 readonly
+                color="light-green accent-4"
                 v-on="on"
               ></v-text-field>
             </template>
@@ -129,6 +132,7 @@
                 label="Pick End Date"
                 prepend-icon="event"
                 readonly
+                color="light-green accent-4"
                 v-on="on"
               ></v-text-field>
             </template>
@@ -167,7 +171,7 @@
     data() {
       return {
         mode: 'stack',
-        modelNames: ['Firework', 'European', 'Model X'],
+        modelNames: ['Firework', 'European', 'Model X', 'Model Y', 'Model Z', 'Model Backwards R'],
         selectedModels: [],
         startTime: null,
         endTime: null,

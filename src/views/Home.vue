@@ -8,9 +8,14 @@
           <ul>
             <li><v-icon>home</v-icon> : Home (where we currently are) </li>
             <li><v-icon>help_outline</v-icon> : About page where I list technicalities </li>
-            <li>Vuetify<v-icon>style</v-icon> : A Vuetify Playground showcasing some of the built-in components of Vuetify </li>
-            <li>Plotly<v-icon>scatter_plot</v-icon>: A Plotly Playground showcasing some Plotly plots </li>
-            <li>OpenLayers 6<v-icon>map</v-icon> : An OpenLayers 6 Playground showcasing some maps </li>
+            <li><v-icon>style</v-icon> Vuetify : A Vuetify Playground showcasing some of the built-in components of Vuetify </li>
+            <li><v-icon>scatter_plot</v-icon> Plotly : A Plotly Playground showcasing some Plotly plots </li>
+            <li><v-icon>map</v-icon> OpenLayers 6 : An OpenLayers 6 Playground showcasing some maps </li>
+            <li><v-icon>dynamic_feed</v-icon> Example Pages : Dropdown Menu of Template Pages for VAQUUM</li>
+            <ul>
+              <li><v-icon>timeline</v-icon> Time Series : Template for VAQUUM implementing Select, Date-Time Pickers and a Plotly Example of a Time Series</li>
+              <li><v-icon>home</v-icon> Home Placeholder : Home Placeholder to artificially inflate the Dropdown Menu while I'm adding other pages</li>
+            </ul>
           </ul>
         </v-container>
       </v-card>
