@@ -23,7 +23,35 @@
           <v-icon dark>{{ item.icon }}</v-icon>
           {{ item.title }}
         </v-btn>
+        <v-menu bottom offset-y="true">
+        <template v-slot:activator="{ on: menu }">
+          <v-tooltip bottom>
+            <template v-slot:activator="{ on: tooltip }">
+              <v-btn
+                x-large
+                color="light-green accent-2"
+                v-on="{ ...tooltip, ...menu }"
+              ><v-icon>dynamic_feed</v-icon> Example Pages</v-btn>
+            </template>
+            <span>Examples</span>
+          </v-tooltip>
+        </template>
+        <v-list>
+          <v-list-item
+            v-for="(item, index) in dropdownItems"
+            :key="index"
+            :to="item.path"
+          >
+            <v-icon>{{ item.icon }}</v-icon>
+            <v-list-item-title> {{ item.title }}</v-list-item-title>
+          </v-list-item>
+        </v-list>
+      </v-menu>
       </v-toolbar-items>
+
+      
+
+
     </v-app-bar>
 
     <v-content>
@@ -66,6 +94,10 @@
             { title: 'Plotly ', path: '/plotly_playroom', icon: 'scatter_plot' },
             { title: 'OpenLayers 6 ', path: '/openlayers_playroom', icon: 'map' }
             
+        ],
+        dropdownItems: [
+            { title: 'Time Series' , path: 'time_series_example' , icon: 'timeline'},
+            { title: 'Home Placeholder' , path: '/' , icon: 'home'}
         ]
       }
     }

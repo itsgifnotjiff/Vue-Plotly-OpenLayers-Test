@@ -32,6 +32,11 @@ const routes = [
     path: '/openlayers_playroom',
     name: 'OpenLayers 6 Playroom',
     component: () => import('../views/OpenLayersPlayroom.vue')
+  },
+  {
+    path: '/time_series_example',
+    name: 'Time Series Example',
+    component: () => import('../views/TimeSeriesExample.vue')
   }
 ]
 
