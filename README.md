@@ -1,5 +1,7 @@
 # vue-plotly-post-udemy
 
+A website made for the Canadian Government CMC-Dorval's internal tool VAQUUM and to test the developement of modern website internally.
+
 ## Project setup
 ```
 npm install
