@@ -37,6 +37,11 @@ const routes = [
     path: '/time_series_example',
     name: 'Time Series Example',
     component: () => import('../views/TimeSeriesExample.vue')
+  },
+  {
+    path: '/experiment',
+    name: 'Experiment',
+    component: () => import('../views/Experiment.vue')
   }
 ]
 

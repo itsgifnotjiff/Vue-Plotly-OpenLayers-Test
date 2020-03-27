@@ -42,8 +42,9 @@
             :key="index"
             :to="item.path"
           >
-            <v-icon>{{ item.icon }}</v-icon>
-            <v-list-item-title> {{ item.title }}</v-list-item-title>
+            <v-list-item-title>
+              <v-icon>{{ item.icon }}</v-icon> {{ item.title }}
+            </v-list-item-title>
           </v-list-item>
         </v-list>
       </v-menu>
@@ -96,8 +97,9 @@
             
         ],
         dropdownItems: [
-            { title: 'Time Series' , path: 'time_series_example' , icon: 'timeline'},
-            { title: 'Home Placeholder' , path: '/' , icon: 'home'}
+            { title: ' Time Series ' , path: 'time_series_example' , icon: 'timeline'},
+            { title: ' Experiment ' , path: 'experiment' , icon: 'all_inclusive'},
+            { title: ' Home Placeholder ' , path: '/' , icon: 'home'}
         ]
       }
     }

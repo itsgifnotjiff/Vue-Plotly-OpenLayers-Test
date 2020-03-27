@@ -14,6 +14,7 @@
             <li><v-icon>dynamic_feed</v-icon> Example Pages : Dropdown Menu of Template Pages for VAQUUM</li>
             <ul>
               <li><v-icon>timeline</v-icon> Time Series : Template for VAQUUM implementing Select, Date-Time Pickers and a Plotly Example of a Time Series</li>
+              <li><v-icon>all_inclusive</v-icon> Experiment : A page to experiment on for developement purposes</li>
               <li><v-icon>home</v-icon> Home Placeholder : Home Placeholder to artificially inflate the Dropdown Menu while I'm adding other pages</li>
             </ul>
           </ul>
