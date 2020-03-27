@@ -6,9 +6,10 @@ import vuetify from './plugins/vuetify'
 import VueLayers from 'vuelayers'
 import 'vuelayers/lib/style.css' // needs css-loader
 
+Vue.config.productionTip = false
+
 Vue.use(VueLayers);
 
-Vue.config.productionTip = false
 
 new Vue({
   router,

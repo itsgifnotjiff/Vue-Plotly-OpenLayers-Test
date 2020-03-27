@@ -23,7 +23,7 @@
           <v-icon dark>{{ item.icon }}</v-icon>
           {{ item.title }}
         </v-btn>
-        <v-menu bottom offset-y="true">
+        <v-menu bottom :offset-y="offsetY" >
         <template v-slot:activator="{ on: menu }">
           <v-tooltip bottom>
             <template v-slot:activator="{ on: tooltip }">
@@ -88,6 +88,7 @@
       return {
         appTitle: 'Some App Title',
         sidebar: false,
+        offsetY: true,
         menuItems: [
             { title: 'Home', path: '/', icon: 'home' },
             { title: 'About', path: '/about', icon: 'help_outline' },
